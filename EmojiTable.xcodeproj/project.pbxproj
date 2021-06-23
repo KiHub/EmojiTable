@@ -13,6 +13,7 @@
 		0BAA1EED2683974300AE0630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BAA1EEB2683974300AE0630 /* Main.storyboard */; };
 		0BAA1EEF2683974500AE0630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BAA1EEE2683974500AE0630 /* Assets.xcassets */; };
 		0BAA1EF22683974500AE0630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BAA1EF02683974500AE0630 /* LaunchScreen.storyboard */; };
+		0BAA1EFC268399BB00AE0630 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA1EFB268399BA00AE0630 /* EmojiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0BAA1EEE2683974500AE0630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BAA1EF12683974500AE0630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BAA1EF32683974500AE0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BAA1EFB268399BA00AE0630 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0BAA1EE72683974300AE0630 /* SceneDelegate.swift */,
 				0BAA1EE92683974300AE0630 /* ViewController.swift */,
 				0BAA1EEB2683974300AE0630 /* Main.storyboard */,
+				0BAA1EFB268399BA00AE0630 /* EmojiTableViewController.swift */,
 				0BAA1EEE2683974500AE0630 /* Assets.xcassets */,
 				0BAA1EF02683974500AE0630 /* LaunchScreen.storyboard */,
 				0BAA1EF32683974500AE0630 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BAA1EFC268399BB00AE0630 /* EmojiTableViewController.swift in Sources */,
 				0BAA1EEA2683974300AE0630 /* ViewController.swift in Sources */,
 				0BAA1EE62683974300AE0630 /* AppDelegate.swift in Sources */,
 				0BAA1EE82683974300AE0630 /* SceneDelegate.swift in Sources */,
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327B2F3V2J;
 				INFOPLIST_FILE = EmojiTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327B2F3V2J;
 				INFOPLIST_FILE = EmojiTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
