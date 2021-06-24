@@ -15,29 +15,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="m2u-oU-UM8">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="emojiCell" rowHeight="71" id="m2u-oU-UM8" customClass="EmojiTableViewCell" customModule="EmojiTable" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m2u-oU-UM8" id="Riz-YR-nTf">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rgd-XO-jIU">
+                                            <rect key="frame" x="16" y="8" width="382" height="55"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="🦦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23Q-d1-wSw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="23" height="55"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ik3-TH-Nmy">
+                                                    <rect key="frame" x="33" y="0.0" width="349" height="55"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beaver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOB-as-wAH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="349" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep chilling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wl3-po-uRI">
+                                                            <rect key="frame" x="0.0" y="27.5" width="349" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rgd-XO-jIU" firstAttribute="leading" secondItem="Riz-YR-nTf" secondAttribute="leading" constant="16" id="d8H-b7-kKt"/>
+                                        <constraint firstAttribute="bottom" secondItem="rgd-XO-jIU" secondAttribute="bottom" constant="8" id="gyz-Ed-aoM"/>
+                                        <constraint firstAttribute="trailing" secondItem="rgd-XO-jIU" secondAttribute="trailing" constant="16" id="o6K-xs-AZI"/>
+                                        <constraint firstItem="rgd-XO-jIU" firstAttribute="top" secondItem="Riz-YR-nTf" secondAttribute="top" constant="8" id="vSU-oh-1tq"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="E3F-5t-ANF">
-                                <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E3F-5t-ANF" id="Mk5-C2-eoW">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AGC-lH-p6M">
-                                <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AGC-lH-p6M" id="Xam-f1-4Uj">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="wl3-po-uRI" id="nsh-dn-ZAT"/>
+                                    <outlet property="emijiLabel" destination="23Q-d1-wSw" id="eRH-ow-SJr"/>
+                                    <outlet property="nameLabel" destination="rOB-as-wAH" id="ZtS-vl-5Ew"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
