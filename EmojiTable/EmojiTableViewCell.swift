@@ -29,4 +29,10 @@ class EmojiTableViewCell: UITableViewCell {
         // Configure the view for the selected state
 //    }
 
+    func set(object: Emoji) {
+        self.emijiLabel.text = object.emoji
+        self.nameLabel.text = object.name
+        self.descriptionLabel.text = object.description
+        
+    }
 }
